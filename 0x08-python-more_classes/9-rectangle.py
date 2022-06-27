@@ -4,9 +4,6 @@ Defines a Rectangle Class
 """
 
 
-from this import s
-
-
 class Rectangle:
     """ defines an empty class rectangle """
 
