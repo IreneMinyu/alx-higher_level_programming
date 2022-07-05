@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-"""
-write_file function
-"""
 
 
 def append_write(filename="", text=""):
-    """Write into file , create if it doesn't exit"""
-    with open(filename, 'a', encoding=("utf8")) as file:
-        num_c = file.write(text)
-        return num_c
-
-
-nb_characters_added = append_write(
-    "file_append.txt", "This School is so cool!\n")
-print(nb_characters_added)
+    """Write string to file (append mode)
+    Args:
+        filename (str): string of path to file
+        text (str): string to write to file
+    Returns:
+        number of characters written
+    """
+    chars_written = 0
+    with open(filename, 'a', encoding='utf-8') as f:
+        chars_written += f.write(text)
+    return chars_written
