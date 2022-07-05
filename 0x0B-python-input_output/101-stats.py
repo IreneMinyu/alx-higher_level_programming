@@ -3,6 +3,10 @@
 Task: 0. Log Parsing
 File: 0x06-log_parsing/0-stats.py
 """
+import datetime
+from time import sleep
+import sys
+import random
 from sys import stdin
 
 
