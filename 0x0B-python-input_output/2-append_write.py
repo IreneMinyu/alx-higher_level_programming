@@ -1,15 +1,9 @@
 #!/usr/bin/python3
+"""append write"""
 
 
 def append_write(filename="", text=""):
-    """Write string to file (append mode)
-    Args:
-        filename (str): string of path to file
-        text (str): string to write to file
-    Returns:
-        number of characters written
-    """
-    chars_written = 0
-    with open(filename, 'a', encoding='utf-8') as f:
-        chars_written += f.write(text)
-    return chars_written
+    """"append write"""
+    with open(filename, mode="a", encoding="utf-8") as fd:
+        fd.write(text)
+    return len(text)
